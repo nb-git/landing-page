@@ -2,8 +2,7 @@ version: '2'
 
 services:
   hello-world-angular:
-    image:
-     "hello-world-angular:prod"
-    ports:
-      - "8090:8090"
+    tty: true
+    build: https://raw.githubusercontent.com/nb-git/landing-page/master/Dockerfile
+    stdin_open: true
 
