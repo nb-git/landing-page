@@ -1,0 +1,9 @@
+<div *ngIf="messageService.messages.length">
+  <div *ngFor="let message of messageService.messages" ngClass="{{message.alertType}}"
+       class="alert alert-dismissible fade show" role="alert">
+    {{message.text}}
+    <button type="button" class="close" aria-label="close" data-dismiss="alert"
+            (click)="messageService.removeMessage(message)">&times;
+    </button>
+  </div>
+</div>

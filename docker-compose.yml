@@ -1,0 +1,9 @@
+version: '2'
+
+services:
+  hello-world-angular:
+    image:
+     "hello-world-angular:prod"
+    ports:
+      - "8090:8090"
+
