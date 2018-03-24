@@ -3,6 +3,6 @@ version: '2'
 services:
   hello-world-angular:
     tty: true
-    build: https://raw.githubusercontent.com/nb-git/landing-page/master/Dockerfile
+    build: https://github.com/nb-git/landing-page.git
     stdin_open: true
 
